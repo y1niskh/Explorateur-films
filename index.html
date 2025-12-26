@@ -9,10 +9,18 @@
 
   <header>
     <h1>Explorateur de Films</h1>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Rechercher un film...">
+      <button id="searchBtn">Rechercher</button>
+    </div>
   </header>
 
   <div class="movies-container" id="movies-container">
-    <!--  Les cartes de films seront injectées ici par JavaScript -->
+    <!-- Les cartes de films seront injectées ici -->
+  </div>
+
+  <div class="load-more-container">
+    <button id="nextPage">Charger plus de films</button>
   </div>
 
   <script src="script.js"></script>
