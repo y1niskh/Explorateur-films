@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Explorateur de Films</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Explorateur de Films</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Explorateur de Films</h1>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Rechercher un film..."
+        />
+        <button id="searchBtn">Rechercher</button>
+      </div>
+    </header>
 
-  <header>
-    <h1>Explorateur de Films</h1>
-    <div class="search-bar">
-      <input type="text" id="searchInput" placeholder="Rechercher un film...">
-      <button id="searchBtn">Rechercher</button>
+    <div class="movies-container" id="movies-container">
+      <!-- Les cartes de films seront injectées ici -->
     </div>
-  </header>
 
-  <div class="movies-container" id="movies-container">
-    <!-- Les cartes de films seront injectées ici -->
-  </div>
+    <div class="load-more-container">
+      <button id="nextPage">Charger plus de films</button>
+    </div>
 
-  <div class="load-more-container">
-    <button id="nextPage">Charger plus de films</button>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

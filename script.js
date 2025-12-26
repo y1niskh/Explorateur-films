@@ -32,7 +32,7 @@ async function fetchMovies(page = 1, query = '') {
 // Affichage des films
 function displayMovies(movies) {
   container.innerHTML = ''; // vide le container
-  movies.forEach(movie => {
+  movies.slice(0, 18).forEach(movie => {
     const card = document.createElement('div');
     card.className = 'movie-card';
     card.innerHTML = `
