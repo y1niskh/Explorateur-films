@@ -104,3 +104,40 @@ header {
 .load-more-container button:hover {
   background-color: #000000c8;
 }
+/* Styles existants ici... */
+
+/* Styles pour mobile uniquement */
+@media (max-width: 600px) {
+  .movies-container {
+    grid-template-columns: 1fr; /* 1 carte par ligne */
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .movie-card {
+    padding: 12px; /* agrandir la carte */
+  }
+
+  .movie-info h3 {
+    font-size: 22px; /* texte plus grand */
+  }
+
+  .movie-info p {
+    font-size: 16px;
+  }
+
+  .search-bar input {
+    width: 150px; /* input plus petit sur mobile */
+    font-size: 16px;
+  }
+
+  .search-bar button {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .load-more-container button {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
+}

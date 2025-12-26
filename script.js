@@ -1,4 +1,4 @@
-const apiKey = '8a705b118b52bd5478d94dae5fcd7845'; // Remplace par ta clé TMDb
+const apiKey = '8a705b118b52bd5478d94dae5fcd7845'; // Ta clé TMDb
 const imgBaseUrl = 'https://image.tmdb.org/t/p/w500';
 const totalPages = 50;
 
@@ -29,10 +29,15 @@ async function fetchMovies(page = 1, query = '') {
   }
 }
 
-// Affichage des films
+// Affichage des films avec adaptation mobile
 function displayMovies(movies) {
   container.innerHTML = ''; // vide le container
-  movies.slice(0, 18).forEach(movie => {
+
+  // Détection mobile
+  const isMobile = window.innerWidth <= 600;
+  const maxMovies = isMobile ? 6 : 18;
+
+  movies.slice(0, maxMovies).forEach(movie => {
     const card = document.createElement('div');
     card.className = 'movie-card';
     card.innerHTML = `
