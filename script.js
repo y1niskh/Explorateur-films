@@ -35,7 +35,7 @@ function displayMovies(movies) {
 
   // Détection mobile
   const isMobile = window.innerWidth <= 600;
-  const maxMovies = isMobile ? 6 : 18;
+  const maxMovies = isMobile ? 6 : 16;
 
   movies.slice(0, maxMovies).forEach(movie => {
     const card = document.createElement('div');
