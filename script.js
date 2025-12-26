@@ -1,4 +1,4 @@
-const apiKey = 'TA_CLE_API_ICI'; // Remplace par ta clé TMDb
+const apiKey = '8a705b118b52bd5478d94dae5fcd7845'; // Remplace par ta clé TMDb
 const apiUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=fr-FR&page=1`;
 const imgBaseUrl = 'https://image.tmdb.org/t/p/w500';
 
